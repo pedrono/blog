@@ -72,3 +72,12 @@ That means Blender in command line mode (-b) shall render the file example.blend
 ##Batch rendering
 As I said in the introduction this is in my opinion the most useful application of the command line rendering of blender, at least for the general use of Blender.
 There are several ways to implement it.
+
+###Directly from the command line
+1. Windows (DOS)
+   In the Windows command prompt you can combine commands by '&&'.
+   See this example:
+   
+    blender -b example/example1.blend  -s 20 -e 100 -a && blender -b example/example2.blend  -s 20 -e 100 -a
+    
+    
