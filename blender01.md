@@ -61,5 +61,14 @@ We are keepin' it fairly simple, then everything is quite straightforward.
 
     blender -b example/example.blend  –o //rendered_files -x 1 -f 1
 	
-That means Blender in command line mode (-b) shall render the file example.blend, save the output in rendered_files (-o), the file extension should be added (-x), and frame No. 1 should be rendered (-f). 	
+That means Blender in command line mode (-b) shall render the file example.blend, save the output in rendered_files (-o), the file extension should be added (-x), and frame No. 1 should be rendered (-f).
 
+###Animations
+
+    blender -b example/example.blend  -s 20 -e 100 -a
+
+That means Blender in command line mode (-b) shall render the file example.blend, start the rendering at frame 20 (-s) until frame 100 (-e) as an animation (-a). All other render settings like format, render engine, etc are done in the way like defined in the .blend file.
+
+##Batch rendering
+As I said in the introduction this is in my opinion the most useful application of the command line rendering of blender, at least for the general use of Blender.
+There are several ways to implement it.
