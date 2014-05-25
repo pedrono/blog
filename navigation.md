@@ -1,12 +1,8 @@
 # Pedrono
 
-[Blender](blender01.md)
-[Page2](page2.md)
-[Page3](page3.md)
+[Blender]()
 
-[SubMenuName]()
-
-  * [SubPage1](subpage/page1.md)
+  * [Command line rendering](blender01.md)
   * [SubPage2](subpage/page2.md)
   * [SubPage3](subpage/page3.md)
 
