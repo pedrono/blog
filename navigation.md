@@ -8,7 +8,7 @@
   
 [PDF]()
 
-  * [Copy Bookmarks to another PDF](PDF01.md)
+  * [Copy Bookmarks to another PDF file](PDF01.md)
 
 <!-- set a default theme -->
 [gimmick:theme (inverse: false)](bootstrap)
