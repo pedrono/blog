@@ -1,6 +1,8 @@
 Blender command line rendering
 ================================
 
+Warning: Still under construction
+
 Blender offers the possibility to render images or animations from the command line without UI.
 This saves memory and reduces the render time a bit.
 However, I think the most useful application is, if it is required to render multiple files as a batch process.
@@ -78,11 +80,14 @@ There are several ways to implement it.
    In the Windows command prompt you can combine commands by '&&'.
    See this example:
    
+   ```bash
 	blender -b example/example1.blend  -s 20 -e 100 -a && blender -b example/example2.blend  -s 20 -e 100 -a
+   ```
     
    If you are rendering overnight or over the weekend, it is rekommendable to include a command to shutdown the PC.
    The command would then look like this:
    
+    ```bash
     blender -b example/example1.blend  -s 20 -e 100 -a && blender -b example/example2.blend  -s 20 -e 100 -a && shutdown -s
-    
+    ```
     
