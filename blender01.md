@@ -81,13 +81,51 @@ There are several ways to implement it.
    See this example:
    
    ```bash
-	blender -b example/example1.blend  -s 20 -e 100 -a && blender -b example/example2.blend  -s 20 -e 100 -a
+	blender -b example\example1.blend  -s 20 -e 100 -a && blender -b example\example2.blend  -s 20 -e 100 -a
    ```
     
-   If you are rendering overnight or over the weekend, it is rekommendable to include a command to shutdown the PC.
+   If you are rendering overnight or over the weekend, it is rekommendable to include a command to shutdown the PC automatically.
    The command would then look like this:
    
     ```bash
-    blender -b example/example1.blend  -s 20 -e 100 -a && blender -b example/example2.blend  -s 20 -e 100 -a && shutdown -s
+    blender -b example\example1.blend  -s 20 -e 100 -a && blender -b example\example2.blend  -s 20 -e 100 -a && shutdown /s /t 0
     ```
-    
+
+2. Unix (shell)
+   The Blender commands are identical on Unix (Linux,MAC OS X, etc) and Windows systems. However, there some pecularities for each OS, e.g. Windows uses the \ character as the path separator and UNIX the / character.
+   The only important difference is the shutdown command. The syntax is different and you need superuser rights to execute that command.
+   In short it looks like this:
+
+    ```bash
+    blender -b example/example1.blend  -s 20 -e 100 -a && blender -b example/example2.blend  -s 20 -e 100 -a && sudo shutdown -h now
+
+###Batch file or shell script
+1. Windows (DOS)
+Simply create a new file in you favorite text editor and copy and paste each command line seperately in a new line. 
+Somthing like this:
+
+   ```bash
+   blender -b example\example1.blend  -s 20 -e 100 -a 
+   blender -b example\example2.blend  -s 20 -e 100 -a
+   shutdown /s /t 0
+   ```
+   Note: Omit '&&'.
+
+   Then save the file and name the file extention .bat, and execute file. 
+   
+2. Unix (bash)
+Bearing in mind the small differences between UNIX and DOS it is practically the same.
+Here an example.
+
+   ```bash
+   #!/bin/bash
+   blender -b example/example1.blend  -s 20 -e 100 -a 
+   blender -b example/example2.blend  -s 20 -e 100 -a
+   shutdown -h now
+   ```
+   Note: Omit '&&'.
+
+   Then save the file and name the file extention .sh, and execute file.
+   
+   Note: In order to make the shutdown work, you have to execute the script with super user rights. 
+
