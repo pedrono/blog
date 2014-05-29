@@ -21,4 +21,4 @@ The procedure is quite easy:
 	```
 
 
-See the full (documentation)[http://ffmpeg.org/ffmpeg-formats.html#concat-1] of this command for reference.
+	See the full (documentation)[http://ffmpeg.org/ffmpeg-formats.html#concat-1] of this command for reference.
