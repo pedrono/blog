@@ -3,13 +3,15 @@
 [Blender]()
 
   * [Command line rendering](blender01.md)
-  * [SubPage2](subpage/page2.md)
-  * [SubPage3](subpage/page3.md)
   
 [PDF]()
 
   * [Copy Bookmarks to another PDF file](PDF01.md)
 
+[Video]()
+
+  * [Merge H.264 videos with FFMPEG](FFMPEG01.md)
+  
 <!-- set a default theme -->
 [gimmick:theme (inverse: false)](bootstrap)
 
