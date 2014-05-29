@@ -10,7 +10,7 @@
 
 [Video]()
 
-  * [Merge H.264 videos with FFMPEG](FFMPEG01.md)
+  * [Merge H.264 videos with FFMPEG](ffmpeg01.md)
   
 <!-- set a default theme -->
 [gimmick:theme (inverse: false)](bootstrap)
