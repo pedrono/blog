@@ -3,7 +3,7 @@ Merge H.264 videos with FFMPEG
 
 Warning: Still under construction
 
-If it is required to merge two or more H.264 (MP4, MOV) video clips without re-encoding, it is very easy to use (FFMEG)[http://ffmpeg.org/] command line tool.
+If it is required to merge two or more H.264 (MP4, MOV) video clips without re-encoding, it is very easy to use [FFMEG](http://ffmpeg.org/) command line tool.
 
 The procedure is quite easy:
 
@@ -21,4 +21,4 @@ The procedure is quite easy:
 	```
 
 
-	See the full (documentation)[http://ffmpeg.org/ffmpeg-formats.html#concat-1] of this command for reference.
+See the full [documentation](http://ffmpeg.org/ffmpeg-formats.html#concat-1) of this command for reference.
