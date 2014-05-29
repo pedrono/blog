@@ -9,11 +9,11 @@ The procedure is quite easy:
    1. FFMPEG need to be installed
    2. Copy the video file in one directory
    3. Create a text file (e.g. list.txt) that contains file names of the H.264 file, see below.
-      ```bash
-        file 'file1.mp4'
-        file 'file2.mp4'
-        file 'file3.mp4'
-      ```
+   ```bash
+   file 'file1.mp4'
+   file 'file2.mp4'
+   file 'file3.mp4'
+   ```
        
    4. The execute following command
       ```bash
